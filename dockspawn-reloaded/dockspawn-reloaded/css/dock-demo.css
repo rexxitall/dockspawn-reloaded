@@ -1,0 +1,157 @@
+/*-Reset brwser presets-------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background-image: url(../images/1.jpg);
+    background-size:cover;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*--flexbox layout------------------------------------------------------------------------------------*/
+html,
+body {
+    height: 100%;
+    margin: 0;
+    overflow:hidden;
+
+}
+
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    z-index: 1;
+}
+
+.box .row {
+    border: 1px dotted grey;
+    z-index: 1;
+}
+
+.box .row.header {
+    flex: 0 1 40px;
+    /* The above is shorthand for:
+    flex-grow: 0,
+    flex-shrink: 1,
+    flex-basis: auto
+    */
+
+    z-index: 10000;
+}
+
+.box .row.content {
+    flex: 1 1 auto;
+    z-index: 1;
+}
+
+.box .row.footer {
+    flex: 0 1 40px;
+    z-index: 1;
+}
+
+/*--dockspawn demo css------------------------------------------------------------------------------------*/
+
+.my-dock-manager {
+
+    background-color:rgba(100,0,0,.1);
+    z-index: 1;
+
+}
+
+.solution-window {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.output-window {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.properties-window {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.toolbox-window {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.editor1-window {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.editor2-window {
+    width: 100px;
+
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.outline-window {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.problems-window {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.editor-host {
+    height: 100px;
+    overflow: visible;
+    background-color: rgba(0, 0, 0, 0.1);
+}
